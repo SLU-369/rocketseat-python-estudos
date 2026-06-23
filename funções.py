@@ -26,3 +26,20 @@ numero1 = 20
 numero2 = 50
 resultado_soma = soma(numero1, numero2)
 print("A soma do numero %s e o numero %s é: %s " % (numero1, numero2, resultado_soma))
+
+#exercicios de fixação 
+
+def calcular_o_dobro(numero):
+    resultado = numero * 2
+    return resultado
+
+print("\nO resultado chamando a função é: ", )
+numero = 33
+resultado_dobro = calcular_o_dobro(numero)
+print("O resultado é : ", resultado_dobro)
+
+def verificar_maioridade(idade):
+    if idade >= 18:
+        return True
+    else:
+        return False
