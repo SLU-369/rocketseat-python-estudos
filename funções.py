@@ -43,3 +43,34 @@ def verificar_maioridade(idade):
         return True
     else:
         return False
+    
+#desempacotamento
+def contador(*num):
+    tum = len(num)
+    print(f"Recebi os valores {num} e são {tum} numeros! ")
+
+contador(1, 2, 3, 4,  5)
+contador(1, 3, 5)
+
+#Listas eu vou criar uma lista e quero que cada valor dobre 
+def dobra(lst):
+    slu = 0
+    while slu < len(lst):
+        lst[slu]*=2
+        slu+=1
+
+lista = [1, 2, 3, 4, 5]
+
+dobra(lista)
+print()
+print("A Lista dobrada é:", lista)
+
+# for com desempacotamento 
+def subtracao(*variavel):
+    n = 0
+    for sub in variavel:
+        n-= sub
+    print(f"subtraindo os valores {variavel}  temos {n}")
+
+subtracao(1, 3)
+subtracao(3, 4, 6)
